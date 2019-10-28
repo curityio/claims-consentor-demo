@@ -1,0 +1,36 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <profiles xmlns="https://curity.se/ns/conf/base">
+  <profile>
+    <id>oauth-dev</id>
+    <type xmlns:as="https://curity.se/ns/conf/profile/oauth">as:oauth-service</type>
+      <settings>
+      <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
+      <claims>
+      <claim>
+        <name>name</name>
+        <value-provided-by>consentor_cp_1</value-provided-by>
+        <transformation>
+          <input-attribute-names>name</input-attribute-names>
+        </transformation>
+      </claim>
+      <claim>
+        <name>transaction_id</name>
+        <value-provided-by>script_cp_1</value-provided-by>
+        <transformation>
+          <input-attribute-names>transaction_id</input-attribute-names>
+        </transformation>
+      </claim>
+      <claim>
+        <name>personal_number</name>
+        <value-provided-by>consentor_cp_1</value-provided-by>
+        <transformation>
+          <input-attribute-names>personalNumber</input-attribute-names>
+          <value-transformation-procedure>ZnVuY3Rpb24gdHJhbnNmb3JtKGF0dHJpYnV0ZXMpIHsKICAvL1RyYW5zZm9ybSB0aGUgYXR0cmlidXRlcyBhbmQgcmV0dXJuIHRoZSBhcHByb3ByaWF0ZSB2YWx1ZSBmb3IgdGhlIGNsYWltCiAgcmV0dXJuIGF0dHJpYnV0ZXMucGVyc29uYWxOdW1iZXI7Cn0=</value-transformation-procedure>
+        </transformation>
+      </claim>
+      </claims>
+      </authorization-server>
+      </settings>
+  </profile>
+  </profiles>
+</config>
