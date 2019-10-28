@@ -1,0 +1,31 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <profiles xmlns="https://curity.se/ns/conf/base">
+  <profile>
+    <id>oauth-dev</id>
+    <type xmlns:as="https://curity.se/ns/conf/profile/oauth">as:oauth-service</type>
+      <settings>
+      <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
+      <consentors>
+      <consentor>
+        <id>bankid_consentor_1</id>
+        <signing-consentor>
+          <text-to-display-procedure>ZnVuY3Rpb24gcmVzdWx0KGNvbnRleHQpIHsKICAgIHZhciBjbGllbnRJZCA9IGNvbnRleHQuY2xpZW50Lm5hbWU7CiAgICB2YXIgc2NvcGVzID0gY29udGV4dC5jb25zZW50QXR0cmlidXRlcy5zY29wZXM7CiAgICB2YXIgdHJhbnNhY3Rpb25JZFNjb3BlID0gc2NvcGVzLmdldCgwKTsKICAgIAogICAgaWYgKCF0cmFuc2FjdGlvbklkU2NvcGUpIHJldHVybiAiTm90IGFwcGxpY2FibGUiOwogICAgCiAgICB2YXIgdHJhbnNhY3Rpb25JZCA9IHRyYW5zYWN0aW9uSWRTY29wZS5yZXBsYWNlKCJ0cmFuc2FjdGlvbklkIiwgIiIpOwogICAgdmFyIEhhc2hNYXAgPSBKYXZhLnR5cGUoImphdmEudXRpbC5IYXNoTWFwIik7CiAgICB2YXIgaG0gPSBuZXcgSGFzaE1hcCgpOwogICAgaG0ucHV0KCJ0cmFuc2FjdGlvbklkIiwgdHJhbnNhY3Rpb25JZCk7CiAgICB2YXIgcXVlcnkgPSBuZXcgSGFzaE1hcCgpOwogICAgcXVlcnkucHV0KCJxdWVyeSIsIGhtKQogICAgdmFyIHJlc3BvbnNlID0gY29udGV4dC5nZXRXZWJTZXJ2aWNlQ2xpZW50KCkuZ2V0KHF1ZXJ5KTsKICAgIAogICAgaWYgKHJlc3BvbnNlLnN0YXR1c0NvZGUgIT0gMjAwKQogICAgewogICAgICAgIHRocm93IGV4Y2VwdGlvbkZhY3RvcnkuZm9yYmlkZGVuRXhjZXB0aW9uKAogICAgICAgICAgICAiYmFkIHJlc3BvbnNlIHN0YXR1cyAiICsgcmVzcG9uc2Uuc3RhdHVzQ29kZSkKICAgIH0KICAgIAogICAgdmFyIHJlc3BvbnNlQm9keSA9IHJlc3BvbnNlLmdldEJvZHkoKTsKICAgIHZhciByZXNwb25zZURhdGEgPSBKU09OLnBhcnNlKHJlc3BvbnNlQm9keSk7CiAgICAKICAgIGlmICghcmVzcG9uc2VEYXRhLnByb2R1Y3QgfHwgcmVzcG9uc2VEYXRhLnByb2R1Y3QgPT0gIlVua25vd24iKQogICAgewogICAgICAgIGxvZ2dlci5lcnJvcigiUHJvZHVjdCB3ZWIgc2VydmljZSBkaWQgbm90IHJldHVybiBhICIgKwogICAgICAgICAgICAicHJvZHVjdCBmb3IgdGhlIHRyYW5zYWN0aW9uICIgKyB0cmFuc2FjdGlvbklkKTsKICAgICAgICAgICAgCiAgICAgICAgdGhyb3cgZXhjZXB0aW9uRmFjdG9yeS5pbnRlcm5hbFNlcnZlckV4Y2VwdGlvbigpCiAgICB9CiAgICAKICAgIHJldHVybiAiRG8geW91IHdhbnQgdG8gYWxsb3cgJyIgKyBjbGllbnRJZCArICInIHRvIHB1cmNoYXNlICciICsKICAgICAgICByZXNwb25zZURhdGEucHJvZHVjdCArICInIGZvciAnIiArIHJlc3BvbnNlRGF0YS5hbW91bnQgKyAiJyAiICsgCiAgICAgICAgcmVzcG9uc2VEYXRhLmN1cnJlbmN5ICsgIj8iOwp9Cg==</text-to-display-procedure>
+          <webservice>
+            <hostname>localhost</hostname>
+            <port>8080</port>
+            <http-client>product_web_service_client</http-client>
+          </webservice>
+          <bankid-signing-consentor xmlns="https://curity.se/ns/ext-conf/bankid-signing-consentor">
+            <http-client>
+              <id>bankid-client</id>
+            </http-client>
+            <mode>test</mode>
+          </bankid-signing-consentor>
+        </signing-consentor>
+      </consentor>
+      </consentors>
+      </authorization-server>
+      </settings>
+  </profile>
+  </profiles>
+</config>
