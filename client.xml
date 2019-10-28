@@ -1,0 +1,40 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <profiles xmlns="https://curity.se/ns/conf/base">
+  <profile>
+    <id>oauth-dev</id>
+    <type xmlns:as="https://curity.se/ns/conf/profile/oauth">as:oauth-service</type>
+      <settings>
+      <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
+      <client-store>
+      <config-backed>
+      <client>
+        <id>client-one</id>
+        <!-- Some settings elided -->
+        <client-name>Client One</client-name>
+        <secret>$5$E6.uk/.GKRRABFX5$UR.9doqY1vHmcH7w4H7bA/C50T2SNJmXCrC27ANVco1</secret>
+        <redirect-uris>https://oauth.tools/callback/code</redirect-uris>
+        <user-consent>
+          <only-consentors>true</only-consentors>
+          <consentors>
+            <consentor>bankid_consentor_1</consentor>
+          </consentors>
+        </user-consent>
+        <scope>openid</scope>
+        <scope>transactionId</scope>
+        <user-authentication>
+          <allowed-authenticators>bankid1</allowed-authenticators>
+          <allowed-authenticators>htmlSql</allowed-authenticators>
+          <allowed-authenticators>sms1</allowed-authenticators>
+        </user-authentication>
+        <capabilities>
+          <code/>
+          <introspection/>
+        </capabilities>
+      </client>
+      </config-backed>
+      </client-store>
+      </authorization-server>
+      </settings>
+  </profile>
+  </profiles>
+</config>
