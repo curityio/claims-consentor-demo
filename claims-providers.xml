@@ -1,0 +1,28 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <profiles xmlns="https://curity.se/ns/conf/base">
+  <profile>
+    <id>oauth-dev</id>
+    <type xmlns:as="https://curity.se/ns/conf/profile/oauth">as:oauth-service</type>
+      <settings>
+      <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
+      <claims>
+      <!-- Others elided --> 
+      <claims-value-provider>
+        <id>consentor_cp_1</id>
+        <consent-claims-provider xmlns="https://curity.se/ns/ext-conf/consent-claims-provider"/>
+      </claims-value-provider>
+      <claims-value-provider>
+        <id>script_cp_1</id>
+        <script-claims-provider xmlns="https://curity.se/ns/ext-conf/script-claims-provider">
+          <data-source>
+            <data-source>DefaultHSQLDB</data-source>
+          </data-source>
+          <procedure>suffix_of_prefix_scope_claims_provider_procedure</procedure>
+        </script-claims-provider>
+      </claims-value-provider>
+      </claims>
+      </authorization-server>
+      </settings>
+  </profile>
+  </profiles>
+</config>
