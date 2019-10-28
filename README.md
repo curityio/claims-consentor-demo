@@ -187,3 +187,13 @@ def get_product(transaction_id):
 With all this setup and running, the demo can be run. To see this, [check out the following video](https://youtu.be/iNlVBcqaKG8):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iNlVBcqaKG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Additional Info
+
+For more information, visit the following:
+
+* [Curity home page](https://curity.io/)
+* [Introduction to claims](https://curity.io/resources/architect/claims/what-are-claims-and-how-they-are-used/)
+* [Consentor docs](https://developer.curity.io/docs/latest/token-service-admin-guide/consentors/index.html)
+* [Scopes and claims docs](https://developer.curity.io/docs/latest/token-service-admin-guide/scopes.html)
+* [OAuth client docs](https://developer.curity.io/docs/latest/token-service-admin-guide/clients.html)
