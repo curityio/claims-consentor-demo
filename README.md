@@ -184,9 +184,7 @@ def get_product(transaction_id):
 
 ## Demo
 
-With all this setup and running, the demo can be run. To see this, [check out the following video](https://youtu.be/iNlVBcqaKG8):
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iNlVBcqaKG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+With all this setup and running, the demo can be run. To see this, [check out this video](https://youtu.be/iNlVBcqaKG8) on YouTube.
 
 ## Additional Info
 
