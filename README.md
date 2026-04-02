@@ -1,4 +1,8 @@
 # Claims Consentor Demo
+
+[![Quality](https://img.shields.io/badge/quality-demo-red)](https://curity.io/resources/code-examples/status/)
+[![Availability](https://img.shields.io/badge/availability-source-blue)](https://curity.io/resources/code-examples/status/)
+
 The files in this repo were used to perform a demonstration of some features of the Curity Identity Server. In particular, it showed:
 
 * What a claims provider is and how to configure and work with a script claims provider and a consentor claims provider
